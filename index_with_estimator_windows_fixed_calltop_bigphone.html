@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Ivane Happy Clean — Spotless spaces. Stress-less lives.</title>
+<style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f5f0e6; }
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #fdfdfd;
+    }
+    header, footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #e9f4ff;
+    }
+    h1 {
+      margin: 0.5rem 0 0.25rem;
+    }
+    header img {
+      height: 60px;
+    }
+    main {
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .before-after {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .before-after img {
+      width: 48%;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    #bottom-form {
+      text-align: center;
+      background-color: #f1faff;
+      padding: 2rem;
+      border-top: 3px solid #cceeff;
+    }
+    #bottom-form h2 {
+      margin-top: 0;
+    }
+  
+    /* === Instant Estimate Tool === */
+    #estimate {
+      margin: 2rem auto 3rem;
+      max-width: 900px;
+    }
+    .est-card {
+      background: #fff8f1;
+      border: 1px solid #ead8c8;
+      border-radius: 14px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+    }
+    .est-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .est-field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .est-field label {
+      font-weight: 600;
+    }
+    .est-field input[type="number"],
+    .est-field select {
+      padding: 0.6rem 0.7rem;
+      border: 1px solid #d6c2af;
+      border-radius: 10px;
+      background: #fff;
+      font-size: 1rem;
+    }
+    .est-extras {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.6rem 1rem;
+      margin-top: 0.5rem;
+    }
+    .est-extras label {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #fff;
+      border: 1px solid #ead8c8;
+      border-radius: 10px;
+      padding: 0.5rem 0.6rem;
+    }
+    .est-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .est-actions {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+      align-items: center;
+    }
+    .btn {
+      border: none;
+      border-radius: 999px;
+      padding: 0.7rem 1.2rem;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #8d6e63, #6d4c41);
+      color: white;
+    }
+    .btn-secondary {
+      background: #f2e6d9;
+      color: #4a342a;
+    }
+    .est-output {
+      margin-top: 1rem;
+      background: #fff;
+      border: 2px dashed #c7ad98;
+      border-radius: 12px;
+      padding: 1rem;
+      font-family: "Trebuchet MS", Arial, sans-serif;
+    }
+    .est-output h3 {
+      margin: 0 0 0.4rem 0;
+      font-size: 1.3rem;
+    }
+    .fineprint {
+      font-size: 0.9rem;
+      color: #5c4b3f;
+      opacity: 0.9;
+      margin-top: 0.4rem;
+    }
+</style>
+</head>
+<body>
+<header id="site-header" style="display:flex; flex-direction:column; align-items:center; justify-content:center; padding:1rem; background-color:#e9f4ff;">
+<img alt="Ivane Happy Clean logo" src="images/logo.png" style="height:140px; margin-bottom:0.5rem;"/>
+<h1 style="margin:0.5rem 0 0.25rem; text-align:center;">Ivane Happy Clean</h1><p style="margin:0; font-style:italic; text-align:center;">Spotless spaces, stress‑less lives — Your trusted family cleaning service</p>
+<p style="margin:0.25rem 0; text-align:center;">Seattle &amp; suburbs trusted cleaning service.</p><p style="margin-top:0.25rem; font-weight:bold; text-align:center; color:#555;">Since 2018</p>
+<a href="tel:+11234567890" id="company-phone" style="display:block; margin-top:0.4rem; font-weight:bold; font-size:1.65rem; text-decoration:none; color:#4a342a;">425-496-3340</a></header>
+<main>
+<section id="hero"><div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:center;"><div style="flex:1; min-width:300px; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); padding: 1.5rem; border-radius: 10px;">
+<h3 style="font-size:2rem; margin-top:0; font-weight:bold; color:#333; font-family: 'Trebuchet MS', sans-serif;">Why Choose Us?</h3>
+<ul>
+<li style="font-size:1.3rem; margin-bottom:0.7rem; font-family: 'Trebuchet MS', sans-serif; color:#444;">We’re a proud family‑owned business that treats your home like our own.</li>
+<li style="font-size:1.3rem; margin-bottom:0.7rem; font-family: 'Trebuchet MS', sans-serif; color:#444;">Trusted in Seattle &amp; surrounding suburbs for reliable, friendly service.</li>
+<li style="font-size:1.3rem; margin-bottom:0.7rem; font-family: 'Trebuchet MS', sans-serif; color:#444;">Eco‑friendly cleaning products safe for kids &amp; pets.</li>
+<li style="font-size:1.3rem; margin-bottom:0.7rem; font-family: 'Trebuchet MS', sans-serif; color:#444;">Flexible scheduling to fit your busy life.</li>
+<li style="font-size:1.3rem; margin-bottom:0.7rem; font-family: 'Trebuchet MS', sans-serif; color:#444;">Attention to detail that leaves every corner sparkling.</li>
+</ul>
+</div><div style="flex:1; min-width:300px;"><img alt="Clean living room with sunlight" src="images/hero.jpg"/></div></div></section>
+<section id="services">
+<h2>Our Services</h2>
+<div class="gallery-grid">
+<img alt="Kitchen cleaning" src="images/service1.jpg"/>
+<img alt="Bathroom cleaning" src="images/service2.jpg"/>
+</div>
+</section>
+<section id="gallery">
+<h2>Gallery — Before &amp; After</h2>
+<div class="before-after">
+<img alt="Before cleaning" src="images/gallery1.jpg"/>
+<img alt="After cleaning" src="images/gallery2.jpg"/>
+</div>
+</section>
+</main>
+<footer>
+<p>© 2025 Ivane Happy Clean</p>
+</footer>
+<!-- ✅ Seamless Cognito Form -->
+<section id="estimate">
+<div style="background:#fff1e6;border:1px solid #ffd8b0;padding:0.8rem 1rem;border-radius:10px;margin:0 auto 1rem;max-width:900px;text-align:center;font-weight:600;">Looking for a better deal? Call and ask about our phone-only discounts!</div>
+<h2>Instant Cleaning Estimate</h2>
+<div aria-labelledby="estimate-title" class="est-card" role="region">
+<p id="estimate-title" style="margin:0; font-weight:600;">Get a quick ballpark estimate. Final pricing is confirmed after a short walkthrough or call.</p>
+<div class="est-grid">
+<div class="est-field">
+<label for="sqft">Home size (sq ft)</label>
+<input id="sqft" min="200" placeholder="e.g., 1800" step="50" type="number"/>
+</div>
+<div class="est-field">
+<label for="bedrooms">Bedrooms</label>
+<input id="bedrooms" min="0" placeholder="e.g., 3" step="1" type="number"/>
+</div>
+<div class="est-field">
+<label for="bathrooms">Bathrooms</label>
+<input id="bathrooms" min="0" placeholder="e.g., 2" step="1" type="number"/>
+</div>
+<div class="est-field">
+<label for="type">Cleaning type</label>
+<select id="type">
+<option value="standard">Standard</option>
+<option value="deep">Deep</option>
+<option value="moveout">Move-out</option>
+</select>
+</div>
+<div class="est-field">
+<label for="frequency">Frequency</label>
+<select id="frequency">
+<option value="onetime">One-time</option>
+<option value="weekly">Weekly (15% off)</option>
+<option value="biweekly">Bi-weekly (10% off)</option>
+<option value="monthly">Monthly (5% off)</option>
+</select>
+</div>
+</div>
+<div class="est-row">
+<div class="est-field" style="flex:1;">
+<label>Extras</label>
+<div class="est-extras">
+<label><input id="extra-fridge" type="checkbox"/> Inside fridge (+$25)</label>
+<label><input id="extra-oven" type="checkbox"/> Inside oven (+$30)</label>
+<label><input id="extra-pet" type="checkbox"/> Pet-friendly home (+5%)</label>
+<label style="gap:0.4rem;"><input id="extra-windows" type="checkbox"/> Interior windows (inside only) — $5 each <input id="windows-count" min="0" placeholder="How many windows?" step="1" style="max-width:160px;" type="number"/><span style="font-size:0.9rem;color:#6d4c41;">(enter quantity)</span></label>
+</div>
+</div>
+</div>
+<div class="est-actions">
+<button class="btn btn-primary" id="calc">Calculate estimate</button>
+<button class="btn btn-secondary" id="reset">Reset</button>
+<a aria-label="Jump to booking form" class="btn btn-secondary" href="#bottom-form">Book / Get a Quote</a>
+</div>
+<div aria-live="polite" class="est-output" id="result" style="display:none;">
+<h3>Your estimated total</h3>
+<div id="price-line" style="font-size:1.5rem; font-weight:800;"></div>
+<div class="fineprint" style="margin-top:0.5rem;">This estimate reflects size, home details, and selected extras. Final pricing may vary based on condition, access, and special requests.</div>
+<div class="est-actions" style="margin-top:0.6rem;">
+<!-- Replace YOUR_NUMBER with your real phone number -->
+<a aria-label="Call now for a discount" class="btn btn-primary" href="#site-header">Call for Discount</a>
+<a class="btn btn-secondary" href="#bottom-form">Or request a quote</a>
+</div>
+<div class="fineprint">This is a ballpark estimate based on size, type, frequency, and extras. Final price depends on actual condition, access, and special requests.</div>
+</div>
+</div>
+<script>
+    (function(){
+      // === Editable base rates (per sq ft) ===
+      const RATES = {
+        standard: 0.11,
+        deep: 0.16,
+        moveout: 0.24
+      };
+      // Surcharges
+      const SURCHARGES = {
+        perBedroom: 10,   // $10 per bedroom
+        perBathroom: 25,  // $25 per bathroom
+        minJob: 120       // Minimum ticket
+      };
+      // Frequency discounts
+      const DISCOUNTS = {
+        onetime: 0,
+        weekly: 0.15,
+        biweekly: 0.10,
+        monthly: 0.05
+      };
+
+      // Extras
+      const EXTRAS = {
+        fridge: 15,
+        oven: 20,
+        windowEach: 5
+      };
+
+      const $ = (id) => document.getElementById(id);
+      const currency = (n) => n.toLocaleString(undefined, { style: 'currency', currency: 'USD' });
+
+      function calcTotal(){
+        const sqft = Number($('sqft').value || 0);
+        const beds = Number($('bedrooms').value || 0);
+        const baths = Number($('bathrooms').value || 0);
+        const type = $('type').value;
+        const freq = $('frequency').value;
+
+        let base = sqft * (RATES[type] || 0);
+        base += (beds * SURCHARGES.perBedroom);
+        base += (baths * SURCHARGES.perBathroom);
+
+        // Extras
+        if ($('extra-fridge').checked) base += EXTRAS.fridge;
+        if ($('extra-oven').checked) base += EXTRAS.oven;
+        if ($('extra-windows').checked) {
+          const wc = Number($('windows-count').value || 0);
+          base += wc * EXTRAS.windowEach;
+        }
+
+        // Pet-friendly +5% (applies at the end)
+        if ($('extra-pet').checked) base *= 1.05;
+
+        // Apply frequency discount
+        const discount = DISCOUNTS[freq] || 0;
+        base = base * (1 - discount);
+
+        // Enforce minimum
+        if (base < SURCHARGES.minJob) base = SURCHARGES.minJob;
+
+        // Show a range +/- 10%
+        const low = Math.max(SURCHARGES.minJob, base * 0.9);
+        const high = base * 1.1;
+
+        return { low, base, high };
+      }
+
+      function showResult(){
+        const res = calcTotal();
+        $('result').style.display = 'block';
+        $('price-line').textContent = currency(res.low) + ' – ' + currency(res.high);
+      }
+
+      function resetAll(){
+        ['sqft','bedrooms','bathrooms','windows-count'].forEach(id => { $(id).value = ''; });
+        ['extra-fridge','extra-oven','extra-windows','extra-pet'].forEach(id => { $(id).checked = false; });
+        $('type').value = 'standard';
+        $('frequency').value = 'onetime';
+        $('result').style.display = 'none';
+      }
+
+      $('calc').addEventListener('click', showResult);
+      $('reset').addEventListener('click', resetAll);
+    })();
+  </script>
+</section>
+<div id="bottom-form">
+<h2>Get a Free Quote</h2>
+<p>Complete this form to receive your personalized cleaning service quote.</p>
+<div style="max-width: 700px; margin: 2rem auto;">
+<script data-form="2" data-key="YvfPLNyKeUWXzhg00_PfDQ" src="https://www.cognitoforms.com/f/seamless.js"></script>
+</div>
+</div>
+</body>
+</html>
